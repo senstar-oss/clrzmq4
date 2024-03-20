@@ -15,7 +15,8 @@ permissions:
   issues: read
   checks: write
   pull-requests: write
-  
+  packages: write
+    
 jobs:
   build:
     runs-on: [windows-latest]
