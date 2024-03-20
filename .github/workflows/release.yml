@@ -45,7 +45,7 @@ jobs:
 
     - name: Run Build
       run: |
-        msbuild /restore clrzmq4.netstandard.sln /t:build /p:Configuration=Release /v:d
+        msbuild /restore clrzmq4.netstandard.sln /t:build /p:Configuration=Release /v:diag
 
     - name: Publish NuGet Package To Local Repo
       working-directory: ./bin/release
