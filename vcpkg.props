@@ -3,7 +3,7 @@
     <PropertyGroup>
         <VcpkgImported>true</VcpkgImported>
         <VcpkgTriplet>x64-windows-release</VcpkgTriplet>
-        <ForceImportBeforeCppTargets>$(GITHUB_WORKSPACE)/scripts/buildsystems/msbuild/vcpkg.targets</ForceImportBeforeCppTargets>
+        <ForceImportBeforeCppTargets>$(GITHUB_WORKSPACE)/vcpkg/scripts/buildsystems/msbuild/vcpkg.targets</ForceImportBeforeCppTargets>
         <VcpkgEnableManifest>true</VcpkgEnableManifest>
         <VcpkgAutoLink>false</VcpkgAutoLink>
         <VcpkgConfiguration>$(Configuration)</VcpkgConfiguration>
