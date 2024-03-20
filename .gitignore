@@ -1,5 +1,5 @@
-.*
-**/.*
+.git/
+.vs/
 bin/*
 obj/*
 **/bin/*
@@ -20,3 +20,5 @@ i386/*
 
 ZeroMQ.*.zip
 
+x64/
+vcpkg_installed/

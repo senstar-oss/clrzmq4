@@ -1,0 +1,7 @@
+{
+  "default-registry": {
+    "kind": "git",
+    "repository": "git@github.com:senstar-oss/vcpkg",
+    "baseline": "6ba505cf2c1752d8ea5abb21427e23ff89dc486f"
+  }
+}

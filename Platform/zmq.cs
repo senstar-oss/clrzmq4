@@ -29,7 +29,7 @@
 		static zmq()
 		{
 
-#if !NETSTANDARD && !NETCORE
+#if !NETCORE
 			// (0) Initialize Library handle
 			NativeLib = Platform.LoadUnmanagedLibrary(LibraryName);
 
