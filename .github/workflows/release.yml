@@ -41,6 +41,7 @@ jobs:
         triplet: x64-windows-release
         token: ${{ github.token }}
         github-binarycache: true    
+        fetch-depth: '0'
 
     - name: Run Build
       run: |
