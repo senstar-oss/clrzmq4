@@ -3,7 +3,7 @@
   "name": "zeromq-net",
   "version": "1.0.0",
   "dependencies": [
-    { "name": "zeromq", "version>=": "4.3.4#6"}
+    { "name": "zeromq", "version>=": "4.3.5"}
   ],
   "builtin-baseline": "ce6186293b3295654c83472e10e9c66078cc3129"
 }
