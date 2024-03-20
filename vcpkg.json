@@ -4,5 +4,6 @@
   "version": "1.0.0",
   "dependencies": [
     { "name": "zeromq", "version>=": "4.3.4#6"}
-  ]
+  ],
+  "builtin-baseline": "6ba505cf2c1752d8ea5abb21427e23ff89dc486f"
 }

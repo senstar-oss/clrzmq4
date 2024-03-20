@@ -2,8 +2,8 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <VcpkgImported>true</VcpkgImported>
-        <ForceImportBeforeCppTargets>$(VCPKG_SOURCE_ROOT)/scripts/buildsystems/msbuild/vcpkg.targets</ForceImportBeforeCppTargets>
-        <VcpkgTriplet>$(VCPKG_DEFAULT_TRIPLET)</VcpkgTriplet>
+        <VcpkgTriplet>x64-windows-release</VcpkgTriplet>
+        <ForceImportBeforeCppTargets>$(GITHUB_WORKSPACE)/scripts/buildsystems/msbuild/vcpkg.targets</ForceImportBeforeCppTargets>
         <VcpkgEnableManifest>true</VcpkgEnableManifest>
         <VcpkgAutoLink>false</VcpkgAutoLink>
         <VcpkgConfiguration>$(Configuration)</VcpkgConfiguration>
