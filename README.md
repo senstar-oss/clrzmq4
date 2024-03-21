@@ -37,9 +37,9 @@ mono bin/Release/ZGuideExamples.exe Espresso
 ```
 - using dotnet framwork
 ```
-nuget restore clrzmq4.netcore.sln
-dotnet msbuild clrzmq4.netcore.sln
-dotnet run --project ZGuideExamples/ZGuideExamples.netcore.csproj Espresso
+nuget restore clrzmq4.netstandard.sln
+dotnet msbuild clrzmq4.netstandard.sln
+dotnet run --project ZGuideExamples/ZGuideExamples.netstandard.csproj Espresso
 ```
 
 Read [ZeroMQ - The Guide](http://zguide.zeromq.org/cs:all)

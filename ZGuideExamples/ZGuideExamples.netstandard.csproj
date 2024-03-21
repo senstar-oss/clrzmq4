@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
 
     <IsPackable>false</IsPackable>
     <OutputType>Exe</OutputType>
@@ -17,7 +17,7 @@
     <OutputPath>..\bin\Release</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZeroMQ.netcore.csproj">
+    <ProjectReference Include="..\ZeroMQ.netstandard.csproj">
       <IncludeInPackage>false</IncludeInPackage>
     </ProjectReference>
   </ItemGroup>

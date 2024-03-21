@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <VcpkgImported>true</VcpkgImported>
+        <VcpkgTriplet>x64-windows-release</VcpkgTriplet>
+        <ForceImportBeforeCppTargets>$(GITHUB_WORKSPACE)/vcpkg/scripts/buildsystems/msbuild/vcpkg.targets</ForceImportBeforeCppTargets>
+        <VcpkgEnableManifest>true</VcpkgEnableManifest>
+        <VcpkgAutoLink>false</VcpkgAutoLink>
+        <VcpkgConfiguration>$(Configuration)</VcpkgConfiguration>
+        <VcpkgConfiguration Condition="'$(Configuration)' == 'test_debug'">Debug</VcpkgConfiguration>
+        <VcpkgConfiguration Condition="'$(Configuration)' == 'test_release'">Release</VcpkgConfiguration>
+        <VcpkgConfigurationFolder Condition="'$(VcpkgConfiguration)' == 'Debug'">debug/</VcpkgConfigurationFolder>
+        <VcpkgInstalledDir>$([MSbuild]::GetDirectoryNameOfFileAbove($(MSBuildProjectDirectory), vcpkg.json))/vcpkg_installed/</VcpkgInstalledDir>
+        <VCPkgCurrentInstalledDir>$(VcpkgInstalledDir)/$(VcpkgTriplet)/</VCPkgCurrentInstalledDir>
+        <VCPkgIncludeFolder>$(VcpkgInstalledDir)/$(VcpkgTriplet)/include/</VCPkgIncludeFolder>
+        <VCPkgLibFolder>$(VcpkgInstalledDir)/$(VcpkgTriplet)/$(VcpkgConfigurationFolder)/lib/</VCPkgLibFolder>
+        <VCPkgBinFolder>$(VcpkgInstalledDir)/$(VcpkgTriplet)/$(VcpkgConfigurationFolder)bin/</VCPkgBinFolder>
+        <VCPkgReleaseBinFolder>$(VcpkgInstalledDir)/$(VcpkgTriplet)/bin/</VCPkgReleaseBinFolder>
+        <vcpkgToolsFolder>$(VcpkgInstalledDir)/$(VcpkgTriplet)/tools/</vcpkgToolsFolder>
+    </PropertyGroup>
+    <ItemDefinitionGroup>
+        <ClCompile>
+            <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ClCompile>
+        <ResourceCompile>
+            <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+        </ResourceCompile>
+    </ItemDefinitionGroup>
+</Project>

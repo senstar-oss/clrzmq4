@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ZGuideExamples.netstandard": {
+      "commandName": "Project",
+      "commandLineArgs": "Version"
+    }
+  }
+}

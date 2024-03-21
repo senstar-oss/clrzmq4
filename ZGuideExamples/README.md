@@ -9,10 +9,10 @@ You can open the `ZGuideExamples.*.csproj` in Visual C# on Windows or in MonoDev
 Add a Reference to the project `ZeroMQ` [`/zeromq/clrzmq4`](http://github.com/zeromq/clrzmq4).
 
 You also can do `msbuild ZGuideExamples.mono.sln` if you prefer to use mono framework,
-or do `dotnet msbuild ZGuideExamples.netcore.sln` if you prefer to use dotnet framework .NET Standard and .NET Core.
+or do `dotnet msbuild ZGuideExamples.netstandard.sln` if you prefer to use dotnet framework .NET Standard and .NET Core.
 
 Now run the project using `mono bin/Release/ZGuideExamples.exe Espresso` if you are using mono framework,
-or do `dotnet run --project ZGuideExamples.netcore.csproj Espresso` if you're using dotnet framework.
+or do `dotnet run --project ZGuideExamples.netstandard.csproj Espresso` if you're using dotnet framework.
 
 ```
 Usage: ./ZGuideExamples.exe [--option] <command> World
