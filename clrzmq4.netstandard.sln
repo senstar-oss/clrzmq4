@@ -6,8 +6,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeroMQ.netstandard", "ZeroM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZGuideExamples.netstandard", "ZGuideExamples\ZGuideExamples.netstandard.csproj", "{4B72A50C-CA9D-4172-B762-29281B36AD11}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dummy", "dummy\dummy.vcxproj", "{EE00AADD-5EDB-4600-A8FA-933546831304}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,14 +30,6 @@ Global
 		{4B72A50C-CA9D-4172-B762-29281B36AD11}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4B72A50C-CA9D-4172-B762-29281B36AD11}.Release|x64.ActiveCfg = Release|Any CPU
 		{4B72A50C-CA9D-4172-B762-29281B36AD11}.Release|x64.Build.0 = Release|Any CPU
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Debug|Any CPU.Build.0 = Debug|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Debug|x64.ActiveCfg = Debug|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Debug|x64.Build.0 = Debug|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Release|Any CPU.ActiveCfg = Release|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Release|Any CPU.Build.0 = Release|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Release|x64.ActiveCfg = Release|x64
-		{EE00AADD-5EDB-4600-A8FA-933546831304}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
