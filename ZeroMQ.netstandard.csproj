@@ -28,7 +28,8 @@
     <PackageReference Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0" Condition="'$(MSBuildProjectExtension)'=='.csproj'" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(SolutionDir)/libzmq/Debug/*" Pack="true" PackagePath="\native\Debug"/>
-    <None Include="$(SolutionDir)/libzmq/Release/*" Pack="true" PackagePath="\native\Release"/>
+    <None Include="$(SolutionDir)/libzmq/Release/*.dll" Pack="true" PackagePath="/runtimes/win-x64/native"/>
+    <Content Include="build/$(MSBuildProjectName).props" CopyToOutputDirectory="Never" PackagePath="build/;buildTransitive/" />
+    <Content Include="build/$(MSBuildProjectName).targets" CopyToOutputDirectory="Never" PackagePath="build/;buildTransitive/" />
   </ItemGroup>
 </Project>
