@@ -1,5 +1,5 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.StartsWith('net4')) Or $(TargetFrameworkVersion.StartsWith('v4'))">
 		<NativeLibs Include="$(MSBuildThisFileDirectory)..\runtimes\win-x64\native\*.dll" />
 		<None Include="@(NativeLibs)">
 			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
